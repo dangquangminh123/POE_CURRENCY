@@ -2,7 +2,9 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      'bg-header': "url('./assets/images/header-bg.jpg')",
+    },
   },
   plugins: [],
 };
