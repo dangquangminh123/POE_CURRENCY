@@ -26,12 +26,10 @@
   display: flex;
   padding-left: 10px;
   justify-content: flex-start;
+  position: relative;
 }
 
-#wrapper .header-mobile .header-box .left #navbar-toggle {
-   font-size: 25px;
-   color: rgb(173, 35, 25);
-}
+
 #wrapper .header-mobile .header-box .right {
   display: flex;
   justify-content: end;
@@ -49,6 +47,79 @@
   display: none
 }
 /* End Navbar */
+
+/* Navbar Mobie */
+#wrapper .header-mobile .header-box .left #nav-responsive  {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  background: #0abde3;
+}
+
+#wrapper .header-mobile .header-box .left #nav-responsive nav {
+  width: 16rem;
+}
+
+#wrapper .header-mobile .header-box .left #navbar-toggle {
+  font-size: 25px;
+  bottom: 0%;
+  position: absolute;
+  padding-left: 20px;
+  color: rgb(173, 35, 25);
+}
+
+.header-mobile .header-box .left #nav-responsive nav a.nav-item-responsive {
+  position: relative;
+  display: block;
+  z-index: 3;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 600;
+  font-size: 17px;
+}
+.header-mobile .header-box .left #nav-responsive nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16rem;
+  height: 2.4rem;
+  background: linear-gradient(to bottom, #3e1315, #e51515);
+  transition: 0.5s ease;
+}
+
+.header-mobile .header-box .left #nav-responsive nav a.nav-item-responsive:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* (top + height + 0.1rem) của thằn này để cho ra top thằn kia */
+.header-mobile .header-box .left #nav-responsive nav a.nav-item-responsive:nth-child(1):hover ~ span {
+  top: 0;
+  height: 2.4rem;
+}
+.header-mobile .header-box .left #nav-responsive nav a.nav-item-responsive:nth-child(2):hover ~ span {
+  top: 2.5rem;
+  height: 2.4rem;
+}
+.header-mobile .header-box .left #nav-responsive nav a.nav-item-responsive:nth-child(3):hover ~ span {
+ top: 4.9rem;
+  height: 2.4rem;
+}
+.header-mobile .header-box .left #nav-responsive nav a.nav-item-responsive:nth-child(4):hover ~ span {
+ top: 7.4rem;
+  height: 2.4rem;
+}
+.header-mobile .header-box .left #nav-responsive nav a.nav-item-responsive:nth-child(5):hover ~ span {
+  top: 9.9rem;
+  height: 2.4rem;
+}
+.header-mobile .header-box .left #nav-responsive nav a.nav-item-responsive:nth-child(6):hover ~ span {
+ top: 12.4rem;
+  height: 2.4rem;
+}
+/* End Navbar Mobie */
+
 /* Breadcrums */
 #wrapper .breadcrumd {
   background: #000;

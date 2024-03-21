@@ -8,7 +8,7 @@
     .container {
       max-width: 720px;
     }
-    #wrapper .header-mobile {
+    #wrapper .header-mobile, #wrapper .header-mobile .header-box .left #nav-responsive  {
         display: none;
     }
 
@@ -111,101 +111,7 @@
         left: 20%;
     }
 
-    /* Navbar */
-    #navbar {
-        display: block;
-        width: 100%;
-        background: #000;
-    }
-  
-  nav {
-    position: relative;
-  }
-  nav a.nav-item {
-    position: relative;
-    display: inline-block;
-    font-size: 17px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: capitalize;
-    text-decoration: none;
-    padding: 21px 12px;
-    z-index: 1;
-  }
-  nav span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 129px;
-    height: 100%;
-    background: linear-gradient(to bottom, #3e1315, #e51515);
-    transition: 0.5s ease;
-  }
-  
-  nav a.nav-item:hover {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  /* (left + width + 4px) của thằn này để cho ra left thằn kia */
-  nav a.nav-item:nth-child(1):hover ~ span {
-    left: 0;
-    width: 129px;
-  }
-  nav a.nav-item:nth-child(2):hover ~ span {
-    left: 132px;
-    width: 116px;
-  }
-  nav a.nav-item:nth-child(3):hover ~ span {
-    left: 252px;
-    width: 99px;
-  }
-  nav a.nav-item:nth-child(4):hover ~ span {
-    left: 355px;
-    width: 85px;
-  }
-  nav a.nav-item:nth-child(5):hover ~ span {
-    left: 444px;
-    width: 164px;
-  }
-  nav a.nav-item:nth-child(6):hover ~ span {
-    left: 612px;
-    width: 109px;
-  }
-  
-  #navbar .item-cart {
-    display: flex;
-    justify-content: center;
-    padding: 18px 10px;
-    align-items: center;
-    background: -webkit-linear-gradient(top, #3e0707, #000);
-  }
-  
-  #navbar .item-cart i {
-    color: #d41515;
-    font-size: 1.4rem;
-    font-weight: 800;
-    margin-right: 10px;
-  }
-  
-  #navbar .item-cart .cart-content {
-    position: relative;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 600;
-    color: #d41515;
-    padding-top: 1px;
-  }
-  
-  #navbar .item-cart .cart-content .cart-item {
-    color: #fff;
-    font-size: 14px;
-    background: #d41515;
-    font-weight: 800;
-    padding: 0px 5px;
-    border-radius: 22px;
-  }
-  /* End navbar */
+   
 }
 
   @media (min-width: 1200px) {
@@ -219,5 +125,100 @@
         position: absolute;
     }
 
-   
+     /* Navbar */
+     #navbar {
+      display: block;
+      width: 100%;
+      background: #000;
   }
+
+nav {
+  position: relative;
+}
+nav a.nav-item {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 21px 12px;
+  z-index: 1;
+}
+nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 129px;
+  height: 100%;
+  background: linear-gradient(to bottom, #3e1315, #e51515);
+  transition: 0.5s ease;
+}
+
+nav a.nav-item:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* (left + width + 4px) của thằn này để cho ra left thằn kia */
+nav a.nav-item:nth-child(1):hover ~ span {
+  left: 0;
+  width: 129px;
+}
+nav a.nav-item:nth-child(2):hover ~ span {
+  left: 132px;
+  width: 116px;
+}
+nav a.nav-item:nth-child(3):hover ~ span {
+  left: 252px;
+  width: 99px;
+}
+nav a.nav-item:nth-child(4):hover ~ span {
+  left: 355px;
+  width: 85px;
+}
+nav a.nav-item:nth-child(5):hover ~ span {
+  left: 444px;
+  width: 164px;
+}
+nav a.nav-item:nth-child(6):hover ~ span {
+  left: 612px;
+  width: 109px;
+}
+
+#navbar .item-cart {
+  display: flex;
+  justify-content: center;
+  padding: 18px 10px;
+  align-items: center;
+  background: -webkit-linear-gradient(top, #3e0707, #000);
+}
+
+#navbar .item-cart i {
+  color: #d41515;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+#navbar .item-cart .cart-content {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #d41515;
+  padding-top: 1px;
+}
+
+#navbar .item-cart .cart-content .cart-item {
+  color: #fff;
+  font-size: 14px;
+  background: #d41515;
+  font-weight: 800;
+  padding: 0px 5px;
+  border-radius: 22px;
+}
+/* End navbar */
+   
+}
